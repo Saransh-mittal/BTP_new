@@ -50,7 +50,7 @@ const Header = () => {
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
 
   return (
-    <header className="header flex items-center" ref={headerRef}>
+    <header className="header flex items-center text-white" style={{backgroundColor:"#18122B"}} ref={headerRef} >
       <div className="container">
         <div className="flex items-center justify-between">
           {/*   logo    */}
@@ -68,7 +68,7 @@ const Header = () => {
                     className={(navClass) =>
                       navClass.isActive
                         ? "text-primaryColor text-[16px] leading-7 font-[600]"
-                        : "text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
+                        : "text-white text-[16px] leading-7 font-[500] hover:text-primaryColor"
                     }
                   >
                     {link.display}
